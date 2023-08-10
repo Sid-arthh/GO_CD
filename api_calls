@@ -32,7 +32,7 @@ xml_data = response.body.match(/<\?xml.*<\/pipeline>/m)[0]
 
 doc = Nokogiri::XML(xml_data)
 
-pipeline_name = doc.xpath('//pipeline').first['name']
+pipeline_name = doc.xpath('//pipeline').first['name']   //Fetch specific key values by modifying code here
 
 puts "Pipeline name: #{pipeline_name}"
 
