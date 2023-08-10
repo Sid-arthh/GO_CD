@@ -4,12 +4,12 @@ require 'nokogiri'
 # GET ALL PIPELINES------>
 # curl 'https://ci.example.com/go/api/feed/pipelines.xml' \
 #       -H 'Authorization: Bearer 6A7B48094CC552B9A2DF0AFADAF50D28F0646070'
-#GET ALL PIPELINES END------->
+#GET ALL PIPELINES END--->
 
 # GET PIPELINE----------->
 # curl 'https://ci.example.com/go/api/pipelines/mypipeline/1.xml' \
 #         -H 'Authorization: Bearer 6A7B48094CC552B9A2DF0AFADAF50D28F0646070'
-# GET PIPELINE END----------->
+# GET PIPELINE END------->
 
 # GET STAGE-------------->
 # curl 'https://ci.example.com/go/api/feed/pipelines/mypipeline/4683/defaultStage/1.xml' \
@@ -19,7 +19,7 @@ require 'nokogiri'
 # GET JOB---------------->
 # curl 'https://ci.example.com/go/api/feed/pipelines/mypipeline/4683/defaultStage/1/defaultJob.xml' \
 #       -u 'username:password'
-# GET JOB END---------------->
+# GET JOB END------------>
 
 url = URI.parse('https://ci.example.com/go/api/pipelines/mypipeline/1.xml')
 headers = {
